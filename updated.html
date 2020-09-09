@@ -8,8 +8,23 @@
          <h1>Firstname : {{firstname}}</h1>
          <h1>Lastname : {{lastname}}</h1>
          <h1>{{mydetails()}}</h1>
+         <props-demo-simple size="5" my-message=" hello from saidur "></props-demo-simple>
+
+
+
+
+
       </div>
+
+
+
       <script type = "text/javascript" >
+
+        Vue.component('propsDemoSimple', {
+         props: ['size', 'myMessage'],
+         template: '<div>{{ myMessage }}</div>'
+        });
+
         var  vm = new Vue({
    el: '#vue_det',
    data: {
@@ -19,10 +34,17 @@
    },
    methods: {
       mydetails : function() {
-         return "I am "+this.firstname +" "+ this.lastname;
+         return "I am "+this.firstname +" "+ this.lastname+" "+"& i am from "+this.address;
       }
    }
-})
+
+
+
+
+});
+
+
+
       </script>
    </body>
 </html>
