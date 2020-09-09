@@ -7,3 +7,12 @@ var vm = new Vue({
 var vm1 = new Vue({
    el: '#component_rahman'
 });
+
+var vm2 = new Vue({
+   el: '#component_test',
+   components:{
+      'testcomponent': {
+         template : '<div><h1>This is coming from component</h1></div>'
+      }
+   }
+});
