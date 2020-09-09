@@ -42,3 +42,6 @@ though V-bind :image src we can render image through vue js
 
 vue js component
 we can define customised html elements from vue js components by using vue.component
+
+- Dynamic Components
+> by using <component v-bind:is='something'></component> tag  we can display components dynamically 
