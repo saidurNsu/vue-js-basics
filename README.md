@@ -17,3 +17,28 @@ In addition to text interpolation, we can also bind element attributes
 > in this method we update the state of our app without touching the DOM - all DOM manipulations are handled by Vue, and the code you write is focused on the underlying logic.
 
 Vue also provides the v-model directive that makes two-way binding between form input and app state a breeze
+
+Composing with Components
+
+
+In Vue, a component is essentially a Vue instance with pre-defined options. Registering a component in Vue is straightforward
+
+
+If there is a component, the data object has to be referred from a function
+
+
+In case of a component, the data is a function, which is used with Vue.extend
+To refer to the data from the component, we need to create an instance of it
+
+
+
+vue js template
+we can render any html element through  vue js
+
+
+image src
+though V-bind :image src we can render image through vue js
+
+
+vue js component
+we can define customised html elements from vue js components by using vue.component
