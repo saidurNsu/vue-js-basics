@@ -39,3 +39,15 @@ var vm2 = new Vue({
       }
    }
 });
+
+var vm = new Vue({
+           el: '#databinding',
+           data: {
+              view: 'component1'
+           },
+           components: {
+              'component1': {
+                 template: '<div><span style = "font-size:55;color:Blue;">Dynamic Component from Bangladesh</span></div>'
+              }
+           }
+        });
