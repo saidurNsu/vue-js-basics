@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>VueJs computed</title>
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+   <body>
+      <div id = "computed_props">
+         FirstName : <input type = "text" v-model = "firstname" /> <br/><br/>
+         LastName : <input type = "text" v-model = "lastname"/> <br/><br/>
+         <h1>My name is {{firstname}} {{lastname}}</h1>
+         <h1>Using computed method : {{getfullname}}</h1>
+
+
+
+      </div>
+
+      <div id = "computed_props1">
+         <input type = "text" v-model = "fullname" />
+         <h1>{{firstName}}</h1>
+         <h1>{{lastName}}</h1>
+      </div>
+
+      <div id="saidur_computed">
+        <h1 style = "background-color:gray;">Random No from computed property: {{getrandomno}}</h1>
+        <h1>Random No from method: {{getrandomno1()}}</h1>
+        <h1>Random No from method : {{getrandomno1()}}</h1>
+        <h1  style = "background-color:gray;">Random No from computed property: {{getrandomno}}</h1>
+        <h1  style = "background-color:gray;">Random No from computed property: {{getrandomno}}</h1>
+        <h1  style = "background-color:gray;">Random No from computed
+           property: {{getrandomno}}</h1>
+        <h1>Random No from method: {{getrandomno1()}}</h1>
+        <h1>Random No from method: {{getrandomno1()}}</h1>
+
+      </div>
+
+     <script type = "text/javascript" src = "vue_computed.js"></script>
+
+   </body>
+
+</html>
