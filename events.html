@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>vue js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+<body>
+      <div id = "databinding">
+         <button @click = "displaynumbers">Click ME</button>
+         <h2> Add Number 100 + 200 = {{total}}</h2>
+      </div>
+      <script type = "text/javascript">
+         var vm = new Vue({
+            el: '#databinding',
+            data: {
+               num1: 100,
+               num2 : 200,
+               total : ''
+            },
+            methods : {
+               displaynumbers : function(event) {
+                  console.log(event);
+                  return this.total =  this.num1+ this.num2;
+               }
+            },
+         });
+      </script>
+   </body>
+</html>
