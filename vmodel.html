@@ -35,6 +35,14 @@
          <h3>Languages Selected is : {{ languages }}</h3>
          <hr/>
 
+         <span style = "font-size:25px;">Enter Age:</span> <input v-model.number = "age" type = "number">
+         <br/>
+         <span style = "font-size:25px;">Enter Message:</span> <input v-model.lazy = "msg">
+         <h3>Display Message : {{msg}}</h3>
+         <br/>
+         <span style = "font-size:25px;">Enter Message : </span><input v-model.trim = "message">
+         <h3>Display Message : {{message}}</h3>
+
 
       </div>
 
@@ -51,7 +59,10 @@
                textmessage:'',
                checked : false,
                picked : 'White',
-               languages : "Java"
+               languages : "Java",
+               age : 0,
+               msg: '',
+               message : ''
             }
          });
       </script>
